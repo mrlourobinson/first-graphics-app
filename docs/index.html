@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>First Graphics App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main-ac508107ea.css">
+    <link rel="stylesheet" href="https://bl.ocks.org/palewire/raw/1035cd306a2f85b362b1a20ce315b8eb/base.css?rev=8">
+    
+</head>
+<body>
+    <nav>
+        <a href="http://first-graphics-app.readthedocs.org/">
+            <img src="https://bl.ocks.org/palewire/raw/1035cd306a2f85b362b1a20ce315b8eb/ire-logo.png">
+        </a>
+    </nav>
+    <header>
+        <h1>A South L.A. neighborhood grapples with a wave of violence</h1>
+        <div class="byline">
+            By <a href="https://www.firstgraphics.app/">The First Graphics App Tutorial</a>
+        </div>
+        <div class="pubdate">
+            
+    <time datetime="2020-03-07" pubdate>Mar. 7, 2020</time>
+
+        </div>
+    </header>
+    
+
+<section>
+    <p>The area around Harvard Park was the deadliest place for African Americans in Los Angeles County last year, according to <a href="http://homicide.latimes.com/">The Times’ Homicide Report</a>. So far this year, six people have been killed. Most of the victims were black men.</p>
+</section>
+
+<section>
+<h3>One corner. Four killings</h3>
+<p>The southwest corner of Harvard Park, at West 62nd Street and Harvard Boulevard, has been especially deadly. In the last year-and-a-half, four men have been killed there — while sitting in a car, trying to defuse an argument or walking home from the barber shop or the corner store.</p>
+</section>
+
+<div id="map"></div>
+
+
+<section>
+  <h3>A South L.A. neighborhood stands apart</h3>
+  <p>Harvard Park's 2016 homicide total was its highest in at least 15 years despite a downward trend in killings across L.A. County.</p>
+
+  <div class="charts">
+    <div class="inline-chart" id="county-homicides">
+      <h4 class="chart-title">County homicides, 2000-2017</h4>
+    </div>
+    <div class="inline-chart" id="harvard-park-homicides">
+      <h4 class="chart-title">Harvard Park homicides, 2000-2017</h4>
+    </div>
+</div></section>
+
+<section>
+<h3>Lives lost in Harvard Park</h3>
+<p>The 64 homicides in Harvard Park since 2000 were primarily black and Latino males, but the list includes husbands, wives, fathers, mothers of all ages, and even some small children.</p>
+<div class="card-columns">
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Eddie Lino</strong></h5>
+      <p class="card-text">Lino, a 23-year-old black male, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Alex Lomeli</strong></h5>
+      <p class="card-text">Lomeli, a 18-year-old Latino male, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/6c1c486b-acc7-4539-8eab-a53c1930aefe.jpeg" alt="Carlos Martinez">
+      <h5 class="card-title"><strong>Carlos Martinez</strong></h5>
+      <p class="card-text">Martinez, a 61-year-old Latino male, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Lloyd Craig</strong></h5>
+      <p class="card-text">Craig, a 33-year-old black male, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/7272e31f-42af-4536-8c56-9fc4c1bc1d93.jpeg" alt="Jenell Gamble-Kendrick">
+      <h5 class="card-title"><strong>Jenell Gamble-Kendrick</strong></h5>
+      <p class="card-text">Gamble-Kendrick, a 73-year-old black female, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/31140bd0-60c1-44f1-8ebc-c122b36c0b95.jpeg" alt="Brandon Tatum">
+      <h5 class="card-title"><strong>Brandon Tatum</strong></h5>
+      <p class="card-text">Tatum, a 23-year-old black male, died in 2017.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Tyrone Davis</strong></h5>
+      <p class="card-text">Davis, a 16-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Edwardo Garcia Hernandez</strong></h5>
+      <p class="card-text">Garcia Hernandez, a 20-year-old Latino male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/09f092cf-52de-4ab3-a7d8-d70e63aaaea0.jpeg" alt="DeWayne Parham">
+      <h5 class="card-title"><strong>DeWayne Parham</strong></h5>
+      <p class="card-text">Parham, a 42-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Marcus Wilkerson</strong></h5>
+      <p class="card-text">Wilkerson, a 46-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/d9d91d6d-f84b-43ce-b6fb-2eabb352f917.jpeg" alt="Abrey White">
+      <h5 class="card-title"><strong>Abrey White</strong></h5>
+      <p class="card-text">White, a 33-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Gareth Lopez</strong></h5>
+      <p class="card-text">Lopez, a 34-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Deontae Ruffin</strong></h5>
+      <p class="card-text">Ruffin, a 24-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/f47bbed2-5196-4c06-b316-2fd14877d5e6.jpeg" alt="Kenneth Durden">
+      <h5 class="card-title"><strong>Kenneth Durden</strong></h5>
+      <p class="card-text">Durden, a 50-year-old black male, died in 2016.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/cfdb38d7-2bc1-4aaa-baad-74d07b35f31e.jpeg" alt="Marcus McClendon">
+      <h5 class="card-title"><strong>Marcus McClendon</strong></h5>
+      <p class="card-text">McClendon, a 52-year-old black male, died in 2015.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Jermaine Malone</strong></h5>
+      <p class="card-text">Malone, a 37-year-old black male, died in 2015.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Keion Coleman</strong></h5>
+      <p class="card-text">Coleman, a 18-year-old black male, died in 2015.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Michael White</strong></h5>
+      <p class="card-text">White, a 30-year-old black male, died in 2014.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/1bf4b350-dada-463f-ba90-ab2336eff3f5.jpeg" alt="Kevin Williams">
+      <h5 class="card-title"><strong>Kevin Williams</strong></h5>
+      <p class="card-text">Williams, a 32-year-old black male, died in 2014.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Jorge Herrera</strong></h5>
+      <p class="card-text">Herrera, a 24-year-old Latino male, died in 2012.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Patrick Caruthers</strong></h5>
+      <p class="card-text">Caruthers, a 19-year-old black male, died in 2012.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Jose Zamarripa</strong></h5>
+      <p class="card-text">Zamarripa, a 26-year-old Latino male, died in 2012.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Cleo Hughes</strong></h5>
+      <p class="card-text">Hughes, a 79-year-old black female, died in 2012.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>John Sullivan</strong></h5>
+      <p class="card-text">Sullivan, a 53-year-old white male, died in 2012.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Andre Lockhart</strong></h5>
+      <p class="card-text">Lockhart, a 28-year-old black male, died in 2011.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Donnell Washington</strong></h5>
+      <p class="card-text">Washington, a 30-year-old black male, died in 2010.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/che_grady.jpg" alt="Che Grady">
+      <h5 class="card-title"><strong>Che Grady</strong></h5>
+      <p class="card-text">Grady, a 39-year-old black male, died in 2010.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/dontae_cotton_dmv.jpg" alt="Dontae Cotton">
+      <h5 class="card-title"><strong>Dontae Cotton</strong></h5>
+      <p class="card-text">Cotton, a 28-year-old black male, died in 2010.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Mulindwa Traylor</strong></h5>
+      <p class="card-text">Traylor, a 24-year-old black male, died in 2009.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/FormanKadeemi.jpg" alt="Kadeemi Forman">
+      <h5 class="card-title"><strong>Kadeemi Forman</strong></h5>
+      <p class="card-text">Forman, a 19-year-old black male, died in 2009.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Keith Moore</strong></h5>
+      <p class="card-text">Moore, a 20-year-old black male, died in 2009.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Jesse McWayne</strong></h5>
+      <p class="card-text">McWayne, a 19-year-old black male, died in 2009.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Alcus  Mallory</strong></h5>
+      <p class="card-text">Mallory, a 15-year-old black male, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Edward Adams</strong></h5>
+      <p class="card-text">Adams, a 53-year-old black male, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Matthew Denney</strong></h5>
+      <p class="card-text">Denney, a 20-year-old black male, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>James Hill</strong></h5>
+      <p class="card-text">Hill, a 64-year-old black male, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/luis_alberto_leon_19.jpg" alt="Luis Leon">
+      <h5 class="card-title"><strong>Luis Leon</strong></h5>
+      <p class="card-text">Leon, a 19-year-old Latino male, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Rosa Garcia</strong></h5>
+      <p class="card-text">Garcia, a 35-year-old Latino female, died in 2008.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="http://s3-us-west-2.amazonaws.com/homicide.latimes.com/media/homicide/blanche_shontae_1.jpg" alt="Shontae Blanche">
+      <h5 class="card-title"><strong>Shontae Blanche</strong></h5>
+      <p class="card-text">Blanche, a 22-year-old black female, died in 2007.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Baby Blanche</strong></h5>
+      <p class="card-text">Blanche, a 0-year-old black female, died in 2007.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Christopher Wilson</strong></h5>
+      <p class="card-text">Wilson, a 48-year-old black male, died in 2006.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Freddy Solis Jr.</strong></h5>
+      <p class="card-text">Solis Jr., a 14-year-old Latino male, died in 2006.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Eric Woods</strong></h5>
+      <p class="card-text">Woods, a 36-year-old black male, died in 2005.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Melvin Greenberg</strong></h5>
+      <p class="card-text">Greenberg, a 58-year-old black male, died in 2005.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Gregory Price</strong></h5>
+      <p class="card-text">Price, a 51-year-old black male, died in 2005.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Corey Toliver</strong></h5>
+      <p class="card-text">Toliver, a 26-year-old black male, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Cheryl Edwards</strong></h5>
+      <p class="card-text">Edwards, a 41-year-old black female, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Shaunte Bragg</strong></h5>
+      <p class="card-text">Bragg, a 34-year-old black male, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Michael Grant</strong></h5>
+      <p class="card-text">Grant, a 23-year-old black male, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Gregory Gabriel</strong></h5>
+      <p class="card-text">Gabriel, a 12-year-old black male, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Carl Peters</strong></h5>
+      <p class="card-text">Peters, a 42-year-old black male, died in 2004.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Lafayette Davis</strong></h5>
+      <p class="card-text">Davis, a 32-year-old black male, died in 2003.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Norman Moore</strong></h5>
+      <p class="card-text">Moore, a 27-year-old black male, died in 2003.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Wesley Keene</strong></h5>
+      <p class="card-text">Keene, a 18-year-old black male, died in 2003.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Maurice Marks</strong></h5>
+      <p class="card-text">Marks, a 21-year-old black male, died in 2003.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Hilgard Andrews</strong></h5>
+      <p class="card-text">Andrews, a 45-year-old black male, died in 2002.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Chima Anyanwu</strong></h5>
+      <p class="card-text">Anyanwu, a 21-year-old black male, died in 2002.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Uchechukwu Ofoegbu</strong></h5>
+      <p class="card-text">Ofoegbu, a 21-year-old black male, died in 2002.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Lyndon Cox</strong></h5>
+      <p class="card-text">Cox, a 25-year-old black male, died in 2002.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Von Harris</strong></h5>
+      <p class="card-text">Harris, a 42-year-old black male, died in 2001.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Jason Flores</strong></h5>
+      <p class="card-text">Flores, a 20-year-old Latino male, died in 2001.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Paul Mitchell</strong></h5>
+      <p class="card-text">Mitchell, a 44-year-old black male, died in 2000.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Mardress Brooks</strong></h5>
+      <p class="card-text">Brooks, a 35-year-old black female, died in 2000.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      
+      <h5 class="card-title"><strong>Grover Tinner</strong></h5>
+      <p class="card-text">Tinner, a 48-year-old black male, died in 2000.</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+    
+    <script src="scripts/main-1a2f86586f.js"></script>
+</body>
+</html>
