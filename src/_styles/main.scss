@@ -4,6 +4,10 @@
 // Import Modules
 @import '../_modules/link/link';
 @import './_charts.scss';
+@import './_map.scss';
+@import 'node_modules/leaflet/dist/leaflet';
+@import 'node_modules/leaflet-minimap/src/Control.MiniMap';
+
 
 // Import Modules
 @import '../_modules/link/link';
